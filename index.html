@@ -3,18 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Pizza ouvert 24H/24 et 7J/7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizza Billy</title>
-        <link rel="stylesheet" href="css/style.css">
+<!--         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style-flexbox.css">
+        <link rel="stylesheet" href="css/style-no-flexbox.css"> -->
     </head>
     <body>
-        <!-- Menu + banierer -->
+        <!-- Menu + baniere -->
         <header id="header" class="header">
             <div class="topbar">
                 <h1><a href="#">Pizza Billy</a></h1>
                 <nav id="menu">
                     <ul>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#service">Service</a></li>
                         <li><a href="#localisation">Plan d'accès</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="carte.html">La carte</a></li>
                     </ul>
                 </nav>
@@ -36,13 +40,13 @@
                 <p>Moyens de paiement acceptés : chèque, espèce, ticket restaurant</p>
                 <div class="cards">
                     <div class="card">
-                        <i class="icon rounded background-blue big fas fa-utensils"></i>
+                        <i class="icon rounded background-blue fas fa-utensils"></i>
                         <h3>Formule burger + boisson 5€</h3>
                         <p class="detail">Hamburger et boisson</p>
                     </div>
                     
                     <div class="card">
-                        <i class="icon rounded background-pink big fas fa-utensils"></i>
+                        <i class="icon rounded background-pink fas fa-utensils"></i>
                         <h3>3 Pizzas achetées, la 4<sup>eme</sup> offerte</h3>
                         <p class="detail">Fromage ou anchois ou 1 boisson ou 1 boisson de 1,5 l offertes</p>
                     </div>
@@ -69,11 +73,12 @@
             <div class="container form">
                 <h2>Contact</h2>
                 <p>Envoyez nous vos messages, nous serons heureux de vous répondre!</p>
-                <form method="POST" action="index.html">
+                <form method="POST" action="">
                     <div>
                         <label for="lastname">Nom *</label>
                         <input class="input-control" type="text" id="lastname" name="lastname" placeholder="Nom">
                     </div>
+
                     <div>
                         <label for="firstname">Prénom *</label>
                         <input class="input-control" type="text" id="firstname" name="firstname" placeholder="Prénom"> 
@@ -91,7 +96,7 @@
                         <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
                     </div>
                     <div>
-                        <input  class="black-button big" type="submit" value="Envoyer">
+                        <input  class="black-button" type="submit" value="Envoyer">
                     </div>
                 </form>
             </div>
@@ -123,7 +128,7 @@
             </div>
             <p class="copyright">© Pizza Billy - Pizzeria 2020</p>
         </footer>
-        <div class="contact-us">
+        <div class="contact-button-us">
             <img src="images/whatsapp.png" alt="Contactez nous sur WhatsApp" width="70px">
         </div>
     </body>
