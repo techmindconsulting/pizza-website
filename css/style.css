@@ -12,6 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 
+sup {
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+
 iframe {
     border: 0;
 }
