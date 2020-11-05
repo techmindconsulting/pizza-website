@@ -341,9 +341,13 @@ textarea {
     .header .navmenu-burger ul {
         list-style-type: none;
     }
-
     .header .navmenu-burger ul li{
         margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+    .header .navmenu-burger ul li a:hover{
+        color: #383b43;
     }
 
     .header .navmenu-burger a {
