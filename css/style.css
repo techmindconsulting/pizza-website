@@ -10,6 +10,7 @@ html {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
     scroll-behavior: smooth;
+    min-width: 320px;
 }
 
 sup {
@@ -113,6 +114,11 @@ iframe {
     justify-content: space-between;
     align-items: center;
 }
+
+.header .navburger, .header .navmenu-burger {
+    display : none;
+}
+
 .header .topbar a {
     text-decoration: none;
     color: white;
@@ -275,4 +281,108 @@ textarea {
     border-top: 1px solid #cdced0;
     width: 72%;
     color: #cdced0;
+}
+
+@media screen and (max-width: 850px) {
+
+    .red-button {
+        padding: 0.6rem;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+    
+    .header .topbar { 
+        display: none;
+    }
+    .header .navburger {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        width: 55px;
+        position: fixed;
+        display: block;
+        margin: 0.2rem;
+        padding: 0.5rem 0.5rem;
+        top: 0;
+        left: 0;
+        transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+    }
+    .header .navmenu-burger {
+        display: block;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        left: -250px;
+        transition-duration: 1s;
+    }
+
+    #navmenu-burger:target {
+        left: 0px;
+    }
+
+    #navmenu-burger:not(:target) {
+        left: -250px;
+    }
+
+    .close {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    .header .navmenu-burger ul {
+        list-style-type: none;
+    }
+
+    .header .navmenu-burger ul li{
+        margin-top: 1.5rem;
+    }
+
+    .header .navmenu-burger a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .wrapper .container {
+        width: 80%;
+    }
+    .wrapper .cards {
+        flex-direction: column;
+    }
+    .wrapper div.card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #contact .container.form {
+        width: 90%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+    .footer .container > div {
+        width: 100%;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .red-button {
+        padding: 1.2rem;
+    }
 }
