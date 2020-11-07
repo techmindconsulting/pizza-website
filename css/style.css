@@ -310,7 +310,7 @@ textarea {
         padding: 0.5rem 0.5rem;
         top: 0;
         left: 0;
-        transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+        transition-duration:  .4s;
     }
     .header .navmenu-burger {
         display: block;
@@ -327,29 +327,39 @@ textarea {
         left: 0px;
     }
 
-    #navmenu-burger:not(:target) {
-        left: -250px;
-    }
-
     .close {
         display: inline-block;
         position: absolute;
         right: 10px;
         top: 0;
     }
-
+    .header nav {
+        padding: 0;
+    }
     .header .navmenu-burger ul {
         list-style-type: none;
+        width: 100%;
+        margin-top: 2rem;
     }
-    .header .navmenu-burger ul li{
-        margin-top: 1.5rem;
-        padding-top: 1.5rem;
-        font-size: 2.5rem;
+    .header .navmenu-burger ul li {
+        line-height: 3rem;
+        font-size: 1.7rem;
+        text-align: center;
+        height: 40px;
+        width: 100%;
     }
-    .header .navmenu-burger ul li a:hover{
-        color: #383b43;
+    .header .navmenu-burger ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 40px;
     }
 
+    .header .navmenu-burger ul li a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    
     .header .navmenu-burger a {
         text-decoration: none;
         color: black;
@@ -378,6 +388,10 @@ textarea {
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
+
+    div.contact-button-us img {
+        width: 50px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -388,5 +402,9 @@ textarea {
 
     .red-button {
         padding: 1.2rem;
+    }
+
+    div.contact-button-us img {
+        width: 40px;
     }
 }
