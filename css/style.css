@@ -39,6 +39,7 @@ iframe {
 .red-button:hover {
     background-color: white;
     color: red;
+    border: 1px solid red;
 }
 
 .black-button {
@@ -114,11 +115,9 @@ iframe {
     justify-content: space-between;
     align-items: center;
 }
-
 .header .navburger, .header .navmenu-burger {
     display : none;
 }
-
 .header .topbar a {
     text-decoration: none;
     color: white;
@@ -135,12 +134,12 @@ iframe {
     width: 100%;
     text-align: center;
     transition-duration: 0.8s;
+    border-radius: 20px;
     line-height: 2rem;
 }
 .header .topbar ul li a:hover {
     background-color: white;
     color: black;
-    border-radius: 20px;
 }
 
 /** Header Banner **/ 
@@ -199,7 +198,7 @@ iframe {
     border-radius: 5px;
     border: 1px solid lightgrey;
     padding: 3rem;
-    width: 500px;
+    flex: 0 0 48%; /* raccourci de flex-grow flex-shrink et flex-basis */
 }
 .wrapper .icon {
     padding-top: 2rem;
@@ -296,7 +295,15 @@ textarea {
     iframe {
         width: 100%;
     }
+
+    /* What's app button */
+    div.contact-button-us img {
+        width: 50px;
+    }
     
+    .header nav {
+        padding: 0;
+    }
     .header .topbar { 
         display: none;
     }
@@ -307,10 +314,17 @@ textarea {
         position: fixed;
         display: block;
         margin: 0.2rem;
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 7.5px;
         top: 0;
         left: 0;
         transition-duration:  .4s;
+    }
+    .header .navburger .close {
+        display: inline-block;
+        font-size: 3rem;
+        position: absolute;
+        right: 10px;
+        top: 0;
     }
     .header .navmenu-burger {
         display: block;
@@ -322,28 +336,17 @@ textarea {
         left: -250px;
         transition-duration: 1s;
     }
-
-    #navmenu-burger:target {
+    .header .navmenu-burger:target {
         left: 0px;
-    }
-
-    .close {
-        display: inline-block;
-        position: absolute;
-        right: 10px;
-        top: 0;
-    }
-    .header nav {
-        padding: 0;
     }
     .header .navmenu-burger ul {
         list-style-type: none;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .header .navmenu-burger ul li {
         line-height: 3rem;
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
         height: 40px;
         width: 100%;
@@ -353,18 +356,16 @@ textarea {
         width: 100%;
         height: 40px;
     }
-
     .header .navmenu-burger ul li a:hover {
         background-color: black;
         color: white;
     }
-
-    
     .header .navmenu-burger a {
         text-decoration: none;
         color: black;
     }
 
+    /* Generic Wrapper : Service + Localistion + Contact */
     .wrapper .container {
         width: 80%;
     }
@@ -376,10 +377,12 @@ textarea {
         margin-bottom: 2rem;
     }
 
+    /* Contact */
     #contact .container.form {
         width: 90%;
     }
 
+    /* Footer */
     .footer .container {
         flex-direction: column;
     }
@@ -387,10 +390,6 @@ textarea {
         width: 100%;
         font-size: 1.3rem;
         margin-bottom: 1rem;
-    }
-
-    div.contact-button-us img {
-        width: 50px;
     }
 }
 
@@ -400,8 +399,12 @@ textarea {
         font-size: 10px;
     }
 
+    .wrapper .icon {
+        padding-top: 3.5rem;
+    }
+
     .red-button {
-        padding: 1.2rem;
+        padding: 1.5rem;
     }
 
     div.contact-button-us img {
