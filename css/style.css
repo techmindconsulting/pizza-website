@@ -59,14 +59,14 @@ iframe {
     color: black;
 }
 
-.contact-button-us {
+.whatsapp-button {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     cursor: pointer;
     transition-duration: 1s;
 }
-.contact-button-us:hover {
+.whatsapp-button:hover {
     transform: rotate(360deg);
 }
 
@@ -132,11 +132,11 @@ iframe {
     text-align: center;
     transition-duration: 0.8s;
     line-height: 2rem;
+    border-radius: 20px;
 }
 .header .topbar ul li a:hover {
     background-color: white;
     color: black;
-    border-radius: 20px;
 }
 
 /** Header Banner **/ 
@@ -185,11 +185,11 @@ iframe {
     color: grey;
     margin-bottom: 1rem;
 }
-.wrapper .cards {
+.service .cards {
     margin: 2rem auto;
 }
 
-.wrapper div.card {
+.service div.card {
     background-color: white;
     border-radius: 5px;
     border: 1px solid lightgrey;
@@ -201,54 +201,63 @@ iframe {
     margin: 0 0.2rem;
 }
 
-.wrapper .icon {
+.service .icon {
     padding-top: 2rem;
     font-size: 2rem;
     color: white;
 }
-.wrapper h3 {
+.service h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: grey;
     padding-top: 1.7rem;
 }
-.wrapper p.detail {
+.service p.detail {
     padding-top: 1.7rem;
     font-size: 1rem;
 }
 
 /* Contact */
-#contact .container.form {
-    width: 50%;
-}
-#contact p {
+.contact, .contact p {
+    background-color: #87CEEB;
     color: white;
 }
-#contact form > * {
-    padding: 2em 0 0 2em;
+.contact .container form {
+    width: 70%;
+    margin: 0 auto;
 }
-#contact  label {
-    font-weight: bold;
-    display: block;
-    color: white;
+.contact .form-group {
+    margin: 2rem 0;
     text-align: left;
 }
-#contact input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-textarea {
+.contact  label {
+    font-weight: bold;
+    display: block;
+}
+.contact label::after {
+    content: ' *'
+}
+.contact input:not(.black-button),
+.contact textarea {
     background-color: #ffffff;
     border: none;
     color: #444;
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 0 1em;
     width: 100%;
-  }
-#contact  .input-control {
     height: 2.75em;
+    outline: none;
 }
 
+.contact .form-control:focus {
+    background-color:   #f5f5f5;
+    border: 1px solid lightgrey;
+}
+
+.contact textarea {
+    height: 200px;
+    padding-top: 0.5rem;
+}
 /* Footer */
 .footer {
     background-color: #383b43;
