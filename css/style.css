@@ -62,14 +62,14 @@ iframe {
     color: black;
 }
 
-.contact-button-us {
+.whatsapp-button {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     cursor: pointer;
     transition-duration: 1s;
 }
-.contact-button-us:hover {
+.whatsapp-button:hover {
     transform: rotate(360deg);
 }
 
@@ -188,64 +188,77 @@ iframe {
     color: grey;
     margin-bottom: 1rem;
 }
-.wrapper .cards {
+
+/* Service */
+.service .cards {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-.wrapper div.card {
+.service div.card {
     background-color: white;
     border-radius: 5px;
     border: 1px solid lightgrey;
     padding: 3rem;
     flex: 0 0 48%; /* raccourci de flex-grow flex-shrink et flex-basis */
 }
-.wrapper .icon {
+.service .icon {
     padding-top: 2rem;
     font-size: 2rem;
     color: white;
 }
-.wrapper h3 {
+.service h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: grey;
     padding-top: 1.7rem;
 }
-.wrapper p.detail {
+.service p.detail {
     padding-top: 1.7rem;
     font-size: 1rem;
 }
 
 /* Contact */
-#contact .container.form {
-    width: 50%;
-}
-#contact p {
+.contact, .contact p {
+    background-color: #87CEEB;
     color: white;
 }
-#contact form > * {
-    padding: 2em 0 0 2em;
+.contact .container form {
+    width: 70%;
+    margin: 0 auto;
 }
-#contact  label {
-    font-weight: bold;
-    display: block;
-    color: white;
+.contact .form-group {
+    margin: 2rem 0;
     text-align: left;
 }
-#contact input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-textarea {
+.contact  label {
+    font-weight: bold;
+    display: block;
+}
+.contact label::after {
+    content: ' *'
+}
+
+.contact input:not(.black-button),
+.contact textarea {
     background-color: #ffffff;
     border: none;
     color: #444;
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 0 1em;
     width: 100%;
-  }
-#contact  .input-control {
     height: 2.75em;
+    outline: none;
+}
+
+.contact .form-control:focus {
+    background-color:   #f5f5f5;
+    border: 1px solid lightgrey;
+}
+
+.contact textarea {
+    height: 200px;
+    padding-top: 0.5rem;
 }
 
 /* Footer */
@@ -261,7 +274,7 @@ textarea {
 .footer .container > div {
     color: #cdced0;
     width: 23%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     text-align: center;
 }
@@ -285,8 +298,7 @@ textarea {
     color: #cdced0;
 }
 
-@media screen and (max-width: 850px) {
-
+@media screen and (max-width: 900px) {
     .red-button {
         padding: 0.6rem;
     }
@@ -368,20 +380,20 @@ textarea {
         color: black;
     }
 
-    /* Generic Wrapper : Service + Localistion + Contact */
+    /* Generic Wrapper : Service + Localisation + Contact */
     .wrapper .container {
         width: 80%;
     }
-    .wrapper .cards {
+    .service .cards {
         flex-direction: column;
     }
-    .wrapper div.card {
+    .service div.card {
         width: 100%;
         margin-bottom: 2rem;
     }
 
     /* Contact */
-    #contact .container.form {
+    .contact .container form {
         width: 90%;
     }
 
@@ -402,7 +414,7 @@ textarea {
         font-size: 10px;
     }
 
-    .wrapper .icon {
+    .service .icon {
         padding-top: 3.5rem;
     }
 
@@ -410,7 +422,7 @@ textarea {
         padding: 1.5rem;
     }
 
-    div.contact-button-us img {
+    .whatsapp-button img {
         width: 40px;
     }
 }

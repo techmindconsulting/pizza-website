@@ -50,7 +50,7 @@
             </div>
         </header>
         <!-- Service -->
-        <section id="service" class="wrapper background-grey">
+        <section id="service" class="wrapper service background-grey">
             <div class="container">
                 <h2>Livraison à partir de 7€ sur Marseille</h2>
                 <p>1<sup>er</sup> / 4<sup>eme</sup> /  5<sup>eme</sup> / 6<sup>eme</sup> / 10<sup>eme</sup> / 11<sup>eme</sup> arrondissement</p>
@@ -61,11 +61,10 @@
                         <h3>Formule burger + boisson 5€</h3>
                         <p class="detail">Hamburger et boisson</p>
                     </div>
-                    
                     <div class="card">
                         <i class="icon rounded background-pink fas fa-utensils"></i>
                         <h3>3 Pizzas achetées, la 4<sup>eme</sup> offerte</h3>
-                        <p class="detail">Fromage ou anchois ou 1 boisson ou 1 boisson de 1,5 l offertes</p>
+                        <p class="detail">Fromage ou anchois ou 1 boisson offerte</p>
                     </div>
                 </div>
                 <a class="red-button" href="#">Voir la carte</a>
@@ -86,30 +85,29 @@
                 tabindex="0"></iframe>
             </div>
         </section>
-        <section id="contact" class="wrapper background-blue white">
+        <section id="contact" class="wrapper contact">
             <div class="container form">
                 <h2>Contact</h2>
                 <p>Envoyez nous vos messages, nous serons heureux de vous répondre!</p>
-                <form method="POST" action="">
-                    <div>
-                        <label for="lastname">Nom *</label>
-                        <input class="input-control" type="text" id="lastname" name="lastname" placeholder="Nom">
+                <form name="contact-form" method="POST" action="#">
+                    <div class="form-group">
+                        <label for="lastname">Nom</label>
+                        <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Nom">
                     </div>
-
-                    <div>
-                        <label for="firstname">Prénom *</label>
-                        <input class="input-control" type="text" id="firstname" name="firstname" placeholder="Prénom"> 
+                    <div class="form-group">
+                        <label for="firstname">Prénom</label>
+                        <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Prénom"> 
                     </div>
-                    <div>
-                        <label for="email">Email *</label>
-                        <input class="input-control" type="email" id="email" name="email" placeholder="Email">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Email">
                     </div>
-                    <div>
-                        <label for="phone">Téléphone *</label>
-                        <input class="input-control" type="tel" id="phone" name="phone" placeholder="Numéro de téléphone">
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Numéro de téléphone">
                     </div>
-                    <div>
-                        <label for="phone">Message *</label>
+                    <div class="form-group">
+                        <label for="phone">Message</label>
                         <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
                     </div>
                     <div>
@@ -121,33 +119,35 @@
         <!-- footer -->
         <footer id="footer" class="footer">
             <div class="container">
-                <div class="links">
+                <div>
                     <h3>Pizza Billy</h3>
                     <nav>
                         <ul>
                             <li><a href="#header">Notre pizzeria</a></li>
-                            <li><a href="#localisation">Plan d'accès</a</li>
-                            <li><a href="#contact">Contact</a</li>
-                            <li><a href="">La carte</a></li>
+                            <li><a href="#localisation">Plan d'accès</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">La carte</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="contact">
+                <div>
                     <h3>Pizzeria</h3>
                     <p>Ouvert tous les jours</p>
                     <p><time datetime="17:30">17h30</time> à <time datetime="22:30">22h30</time></p>
                     <p>35 rue de Vitalis 13005 Marseille</p>
-                    <address>04 84 18 23 02</address>
+                    <address>06 11 57 16 31</address>
                 </div>
-                <div class="menu">
+                <div>
                     <h3>Notre carte</h3>
                     <a href="#" download="pdf/carte_pizza_billy_marseille_13005.pdf">Télécharger la carte pizza billy</a>
                 </div>
             </div>
             <p class="copyright">© Pizza Billy - Pizzeria 2020</p>
         </footer>
-        <div class="contact-button-us">
-            <a href="https://api.whatsapp.com/send?phone=33611571631&text=Bonjour%20je%20veux%20commander%20une%20pizza"><img src="images/whatsapp.png" alt="Contactez nous sur WhatsApp" width="70px"></a>
+        <div class="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=33611571631&text=Bonjour">
+                <img src="images/whatsapp.png" alt="Contactez nous sur WhatsApp" width="70">
+            </a>
         </div>
     </body>
 </html>
