@@ -116,9 +116,6 @@ iframe {
     justify-content: space-between;
     align-items: center;
 }
-.header .navburger, .header .navmenu-burger {
-    display : none;
-}
 .header .topbar a {
     text-decoration: none;
     color: white;
