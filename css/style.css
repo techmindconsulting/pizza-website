@@ -261,7 +261,8 @@ textarea {
 .footer .container > div {
     color: #cdced0;
     width: 23%;
-    font-size: 0.8em;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
     text-align: center;
 }
 .footer .container > div ul {
@@ -269,6 +270,8 @@ textarea {
 }
 .footer .container > div a {
     color: #cdced0;
+    text-decoration: none;
+
 }
 .footer .container > div a:hover {
     text-decoration: underline;
