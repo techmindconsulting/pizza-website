@@ -145,13 +145,30 @@ iframe {
 
 /** Header Banner **/ 
 .header .banner {
-    background-image: url('../images/dark_tint.png'), url('../images/pizza_billy.jpg');
     background-size: cover;
     background-position: center center;
     color: white;
     text-align: center;
     padding: 14rem 0;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes slider {
+
+    from {
+        background-image: url('../images/dark_tint.png'), url('../images/pizza-banner-0.jpg');
+    }
+    50% {
+        background-image: url('../images/dark_tint.png'), url('../images/pizza-banner-1.jpg');
+    }
+    to {
+        background-image: url('../images/dark_tint.png'), url('../images/pizza-banner-2.jpg');
+    }
+}
+
 .header .banner h2 {
     font-size: 4rem;
     text-transform: uppercase;
