@@ -145,6 +145,7 @@ iframe {
 
 /** Header Banner **/ 
 .header .banner {
+    background-image: url('../images/dark_tint.png'), url('../images/pizza-banner-0.jpg');
     background-size: cover;
     background-position: center center;
     color: white;
