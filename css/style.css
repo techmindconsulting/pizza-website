@@ -151,10 +151,10 @@ iframe {
     color: white;
     text-align: center;
     padding: 14rem 0;
-    animation-name: slider;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: slider 10s infinite alternate;
+    -webkit-animation: slider 10s infinite alternate;
+    -moz-animation: slider 10s infinite alternate;
+   -o-animation: slider 10s infinite alternate;
 }
 
 @keyframes slider {
