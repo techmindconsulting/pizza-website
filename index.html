@@ -5,13 +5,17 @@
         <meta name="description" content="Pizza ouvert 24H/24 et 7J/7">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizza Billy</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- Menu + baniere -->
         <header id="header" class="header">
             <div class="topbar">
                 <h1><a href="#">Pizza Billy</a></h1>
-                <nav id="menu">
+                <nav class="menu">
                     <ul>
                         <li><a href="#service">Service</a></li>
                         <li><a href="#localisation">Plan d'accès</a></li>
@@ -24,8 +28,8 @@
                 <h2>Pizza Billy</h2>
                 <address><a href="tel:+33611571631"> 06 11 57 16 31 </a></address>
                 <p class="info">A emporter ou livraison</p>
-                <p class="info">Pizzeria, ouvert de <time datetime="17:30">17h30</time> à <time datetime="22:30">22H30</time></p>
-                <p class="info">35 rue Vitalis, 13005 Marseille</p>    
+                <p class="info">Pizzeria, ouvert de <time datetime="17:30">17h30</time> à <time datetime="22:30">22h30</time></p>
+                <address class="info">35 rue Vitalis, 13005 Marseille</address>
                 <a class="red-button" href="#">Commander</a>
             </div>
         </header>
@@ -37,12 +41,12 @@
                 <p>Moyens de paiement acceptés : chèque, espèce, ticket restaurant</p>
                 <div class="cards">
                     <div class="card">
-                        <i class="icon rounded background-blue fas fa-utensils"></i>
+                        <i class="rounded background-blue fas fa-utensils"></i>
                         <h3>Formule burger + boisson 5€</h3>
                         <p class="detail">Hamburger et boisson</p>
                     </div>
                     <div class="card">
-                        <i class="icon rounded background-pink fas fa-utensils"></i>
+                        <i class="rounded background-pink fas fa-utensils"></i>
                         <h3>3 Pizzas achetées, la 4<sup>eme</sup> offerte</h3>
                         <p class="detail">Fromage ou anchois ou 1 boisson offerte</p>
                     </div>
@@ -54,9 +58,10 @@
         <section id="localisation" class="wrapper">
             <div class="container">
                 <h2>Plan d'acces</h2>
-                <p>35 rue Vitalis 13005 Marseille</p>
-                <p>06 11 57 16 31</p>
+                <address>35 rue Vitalis 13005 Marseille</address>
+                <address><a href="tel:+33611571631">06 11 57 16 31</a></address>
                 <iframe 
+                title="Addresse de la pizzeria"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4990.816503056546!2d5.391916738540558!3d43.29397768091119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0a74135d299%3A0x83457b094bcf0c4b!2s35%20Rue%20Vitalis%2C%2013005%20Marseille!5e0!3m2!1sen!2sfr!4v1602067173306!5m2!1sen!2sfr" 
                 width="600" 
                 height="450"
