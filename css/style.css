@@ -8,7 +8,6 @@
 
 html {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    line-height: 1.5rem;
     scroll-behavior: smooth;
 }
 
@@ -84,14 +83,6 @@ iframe {
     color: white;
 }
 
-/** Circle **/
-.rounded {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
 /** Header Topbar **/ 
 .header {
     color: white;
@@ -102,7 +93,7 @@ iframe {
     top: 1.3rem;
     font-size: 1.5rem;
 }
-.header nav {
+.header .menu {
     padding: 0 3rem;
     position: absolute;
     right: 3.125rem;
@@ -151,7 +142,6 @@ iframe {
 .header .banner h2 {
     font-size: 4rem;
     text-transform: uppercase;
-    margin-bottom: 3rem;
 }
 .header .banner address {
     font-size: 4rem;
@@ -163,9 +153,10 @@ iframe {
     text-decoration: none;
     color: white;
 }
-.header .banner p {
+.header .banner .info {
     font-size: 1.5rem;
     margin: 1rem 0;
+    font-weight: normal;
 }
 
 /* Generic Wrapper : Service + Localistion + Contact */
@@ -180,15 +171,20 @@ iframe {
     line-height: 3.5rem;
     margin-bottom: 1.5rem;
 }
-.wrapper p {
+.wrapper p, .wrapper address {
     font-size: 1.5rem;
     color: grey;
     margin-bottom: 1rem;
+    font-style: normal;
 }
+.wrapper address a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .service .cards {
     margin: 2rem auto;
 }
-
 .service div.card {
     background-color: white;
     border-radius: 5px;
@@ -200,11 +196,14 @@ iframe {
     overflow: hidden;
     margin: 0 0.2rem;
 }
-
-.service .icon {
+.service .rounded {
     padding-top: 2rem;
     font-size: 2rem;
     color: white;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 .service h3 {
     font-size: 1.5rem;
@@ -248,16 +247,15 @@ iframe {
     height: 2.75em;
     outline: none;
 }
-
 .contact .form-control:focus {
     background-color:   #f5f5f5;
     border: 1px solid lightgrey;
 }
-
 .contact textarea {
     height: 200px;
     padding-top: 0.5rem;
 }
+
 /* Footer */
 .footer {
     background-color: #383b43;
@@ -266,12 +264,11 @@ iframe {
 .footer .container {
     margin: 0 auto;
     text-align: center;
-
 }
 .footer .container > div {
     color: #cdced0;
     width: 23%;
-    font-size: 0.8em;
+    font-size: 1rem;
     display: inline-block;
     vertical-align: text-top;
 }
