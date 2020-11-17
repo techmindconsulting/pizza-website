@@ -15,7 +15,7 @@ Merci d'integrer la maquette ci jointe en vous appuyant sur le fichier HTML deja
     * gris : #cdced0 (texte footer)
 
 * Flaticon utilisées :
-    * Copier et coller le lien cdn de font-awesome dans votre en-tête html 
+    * Copier et coller le lien cdn (https://cdnjs.com/libraries/font-awesome) de font-awesome dans votre en-tête html 
     * icone couvert de table : `fas fa-utensils`
 
 
