@@ -116,7 +116,7 @@ iframe {
     justify-content: space-between;
     align-items: center;
 }
-.header .navburger, .header .navmenu-burger {
+.header .nav-mobile {
     display : none;
 }
 .header .topbar a {
@@ -343,7 +343,7 @@ iframe {
     .header .topbar { 
         display: none;
     }
-    .header .navburger {
+    .header .nav-mobile {
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 10px;
         width: 55px;
@@ -355,14 +355,14 @@ iframe {
         left: 0;
         transition-duration:  .4s;
     }
-    .header .navburger .close {
+    .header .nav-mobile .close {
         display: inline-block;
         font-size: 3rem;
         position: absolute;
         right: 10px;
         top: 0;
     }
-    .header .navmenu-burger {
+    .header .menu-responsive {
         display: block;
         position: fixed;
         width: 250px;
@@ -372,31 +372,31 @@ iframe {
         left: -250px;
         transition-duration: 1s;
     }
-    .header .navmenu-burger:target {
+    .header .menu-responsive:target {
         left: 0px;
     }
-    .header .navmenu-burger ul {
+    .header .menu-responsive ul {
         list-style-type: none;
         width: 100%;
         margin-top: 3rem;
     }
-    .header .navmenu-burger ul li {
+    .header .menu-responsive ul li {
         line-height: 3rem;
         font-size: 2rem;
         text-align: center;
         height: 40px;
         width: 100%;
     }
-    .header .navmenu-burger ul li a {
+    .header .menu-responsive ul li a {
         display: inline-block;
         width: 100%;
         height: 40px;
     }
-    .header .navmenu-burger ul li a:hover {
+    .header .menu-responsive ul li a:hover {
         background-color: black;
         color: white;
     }
-    .header .navmenu-burger a {
+    .header .menu-responsive a {
         text-decoration: none;
         color: black;
     }
