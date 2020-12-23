@@ -281,7 +281,7 @@ address {
 
 /* Footer */
 .footer {
-    background-color: #383b43;
+    background-color: var(--color-black);
     padding: 3rem 0em 4rem;
 }
 .footer .container {
