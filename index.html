@@ -84,14 +84,14 @@
                 <p>Moyens de paiement acceptés : chèque, espèce, ticket restaurant</p>
                 <div class="cards">
                     <div class="card">
-                        <i class="icon rounded background-blue fas fa-utensils"></i>
-                        <h3>Formule burger + boisson 5€</h3>
+                        <i class="icon circle background-blue fas fa-utensils"></i>
+                        <h3>Formule burger + boisson 10€</h3>
                         <p class="detail">Hamburger et boisson</p>
                     </div>
                     <div class="card">
-                        <i class="icon rounded background-pink fas fa-utensils"></i>
+                        <i class="icon circle background-pink fas fa-utensils"></i>
                         <h3>3 Pizzas achetées, la 4<sup>eme</sup> offerte</h3>
-                        <p class="detail">Fromage ou anchois ou 1 boisson offerte</p>
+                        <p class="detail">Fromage ou anchois</p>
                     </div>
                 </div>
                 <a class="red-button" href="#">Voir la carte</a>
@@ -101,8 +101,8 @@
         <section id="localisation" class="wrapper">
             <div class="container">
                 <h2>Plan d'acces</h2>
-                <p>35 rue Vitalis 13005 Marseille</p>
-                <p>06 11 57 16 31</p>
+                <address>35 rue Vitalis 13005 Marseille</address>
+                <address><a href="tel:+33611571631">06 11 57 16 31</a></address>
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4990.816503056546!2d5.391916738540558!3d43.29397768091119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0a74135d299%3A0x83457b094bcf0c4b!2s35%20Rue%20Vitalis%2C%2013005%20Marseille!5e0!3m2!1sen!2sfr!4v1602067173306!5m2!1sen!2sfr" 
                 width="600" 
@@ -119,19 +119,23 @@
                 <form name="contact-form" method="POST" action="mailto:commande@pizzabilly.com?subject=Commande Pizza" enctype="text/plain">
                     <div class="form-group">
                         <label for="lastname">Nom</label>
-                        <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Nom" required>
+                        <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Nom" 
+                        required>
                     </div>
                     <div class="form-group">
                         <label for="firstname">Prénom</label>
-                        <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Prénom" required> 
+                        <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Prénom" 
+                        required> 
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Email" 
+                        required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Téléphone</label>
-                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required>
+                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" 
+                        required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
@@ -162,7 +166,7 @@
                     <p>Ouvert tous les jours</p>
                     <p><time datetime="17:30">17h30</time> à <time datetime="22:30">22h30</time></p>
                     <address>35 rue de Vitalis 13005 Marseille</address>
-                    <address>06 11 57 16 31</address>
+                    <address><a href="tel:+33611571631">06 11 57 16 31</a></address>
                 </div>
                 <div>
                     <h3>Notre carte</h3>

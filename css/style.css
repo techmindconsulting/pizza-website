@@ -12,7 +12,6 @@
     --color-black: #383b43;
     --color-lightgrey: #cdced0;
     --color-red: #b60000;
-
     --transition-duration: 0.5s;
 }
 
@@ -100,7 +99,7 @@ address {
 }
 
 /** Circle **/
-.rounded {
+.circle {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -199,10 +198,20 @@ address {
     line-height: 3.5rem;
     margin-bottom: 1.5rem;
 }
-.wrapper p {
+.wrapper p, .wrapper address {
     font-size: 1.5rem;
     color: grey;
     margin-bottom: 1rem;
+}
+
+.wrapper address {
+    color: grey;
+}
+
+.wrapper address a {
+    text-decoration: none;
+    color: grey;
+    
 }
 
 /* Service */
