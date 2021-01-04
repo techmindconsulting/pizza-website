@@ -4,6 +4,8 @@ Merci d'integrer la maquette ci jointe en vous appuyant sur le fichier HTML deja
 
 [Maquette site de pizza](maquette.pdf)
 
+Maquette wireframe : https://wireframe.cc/U91Tv3
+
 * Police d'écriture :
     * "Raleway", Arial, Helvetica, sans-serif
 
